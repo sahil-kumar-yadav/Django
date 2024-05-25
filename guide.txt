@@ -1,0 +1,12 @@
+Django is free and open source web application freamework written in Python
+
+
+1. django-admin startproject project-name --> to create a project
+2. python manage.py runserver ---> to run the server (first open project folder then run this command)
+3. python manage.py  -->list of commands
+4. python manage.py startapp home --> create app
+
+
+url dispacting --> sabse phele home ky pass vo jaha hum khete hai vaha forward karega or fir vaha sy agar kuch hai to waha forward kar dega
+
+time --> 45.50 
