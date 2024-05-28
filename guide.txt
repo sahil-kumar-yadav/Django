@@ -9,4 +9,23 @@ Django is free and open source web application freamework written in Python
 
 url dispacting --> sabse phele home ky pass vo jaha hum khete hai vaha forward karega or fir vaha sy agar kuch hai to waha forward kar dega
 
-time --> 45.50 
+5. python manage.py makemigrations
+6. python manage.py migrate --> Django authentication
+
+
+
+
+7 .changes ko detect karne ky liye a. model ko register karna padega (admin.py )
+				b. app register karna hai --> app sy name copy karke  --> settings.py (installed app)
+
+
+8. python manage.py migrate --> database my table banane ky liye
+
+9. Django message framework --> alert show karne ky ly
+
+10. making queries in Django
+
+makemigrations --> create changes and store in a file
+migrate --> apply the pending changes created by makemigration (db.sqlite)
+
+time --> 2;25
