@@ -1,6 +1,8 @@
 Django is free and open source web application freamework written in Python
 
 
+Django andmin likho saari commands aa jayegi
+
 1. django-admin startproject project-name --> to create a project
 2. python manage.py runserver ---> to run the server (first open project folder then run this command)
 3. python manage.py  -->list of commands
@@ -29,3 +31,75 @@ makemigrations --> create changes and store in a file
 migrate --> apply the pending changes created by makemigration (db.sqlite)
 
 time --> 2;25
+
+
+#start with project
+
+1. create project
+	django-admin startproject project-name
+
+
+	python manage.py makemigrations
+	python manage.py migrate --> Django authentication
+
+2. create app
+	python manage.py startapp app-name
+
+3. app ko register karo 
+
+	setting.py my --> installed apps
+	app-name.app.HomeConfig	
+
+4. create folder
+  	a. static
+	b. templates
+
+5. set static dirs.
+	a.google search static dirs. Django
+	b. copy 
+		
+		STATICFILES_DIRS = [
+   			 BASE_DIR / "static",
+    			'/var/www/static/',
+			]
+  	settings.py --> sabse end my aake paste kardo
+
+6. set templates dir
+	inside setting.py only
+	vapas sy --> BASE_DIR / "static", ko copy karke 
+	templates --> dir --> paste BASE_DIR / "templates", (name change karna hai
+
+7. create templates
+ 	a. index.html
+	b. login.html
+
+8. create urls
+
+	project--> urls.py
+	
+	
+	a. import path,include
+	
+	urlpatterns ky ander
+
+	b. path('',include('home.urls')),
+
+9. create urls.py
+	project my jake (home)
+	copy  same urls.py content to (home) just like below
+
+	from django.contrib import admin
+	from django.urls import path,include
+
+urlpatterns = [
+    path('',views.index,name="home"),
+    path('login',views.login,name="login"),
+    path('logout',views.logout,name="logout"),
+    
+]
+
+
+	
+
+
+
